@@ -1,0 +1,52 @@
+.about-vanta {padding-bottom: 72px;}
+.about-hero {display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center;padding:28px 0 72px;}
+.about-intro h1 {font-size:clamp(46px,5.6vw,78px);font-weight:500;color:var(--wine);line-height:1.01;margin:22px 0;letter-spacing:-1.7px;}
+.about-vanta em {font-weight:400;color:var(--terra);}
+.about-intro>p {font-size:15px;max-width:410px;line-height:1.9;color:#66565c;}
+.about-intro .btn {margin-top:30px;gap:20px;}
+.about-signature {display:flex;gap:12px;align-items:center;margin-top:30px;font-size:12px;color:var(--muted);}
+.about-signature>span {font-size:28px;color:var(--terra);}
+.about-art {position:relative;padding:0 0 60px 22px;min-width:0;}
+.about-photo {width:100%;aspect-ratio: .9;object-fit:cover;border-radius:150px 150px 8px 8px;}
+.about-record {position:absolute;width:48%;bottom:22px;left:-24px;padding:10px;background:var(--paper);box-shadow:0 14px 32px #3c172326;transform:rotate(-7deg);}
+.about-record img {width:100%;aspect-ratio:1;object-fit:cover;}
+.about-record span {display:block;font:italic 16px var(--serif);text-align:center;padding:9px 0 3px;color:var(--wine);}
+.about-art-note {display:block;position:absolute;right:0;bottom:20px;font-size:9px;letter-spacing:1.2px;color:var(--muted);max-width:45%;text-align:right;}
+.about-ribbon {display:flex;justify-content:space-around;align-items:center;gap:20px;padding:22px 14px;border-block:1px solid var(--line);font:italic 22px var(--serif);color:var(--wine);}
+.about-ribbon b {font:24px var(--sans);color:var(--terra);font-weight:400;}
+.about-manifesto {display:grid;grid-template-columns:1fr 1fr;gap:64px;padding:80px 0 44px;align-items:center;}
+.about-vanta h2 {font-size:clamp(35px,4vw,50px);font-weight:500;color:var(--wine);margin:16px 0;}
+.about-manifesto p,.about-help-intro p {color:#66565c;line-height:1.9;}
+.about-manifesto p+p {margin-top:16px;}
+.about-paths {display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:0 0 56px;}
+.about-path {display:grid;grid-template-columns: .9fr 1fr;align-items:center;gap:24px;padding:24px;background:var(--paper);border:1px solid #e7ddd1;border-radius:12px;transition:box-shadow .2s,transform .2s;}
+.about-path:hover {transform:translateY(-4px);box-shadow:0 12px 28px #571e3210;color:inherit;}
+.about-path-image {overflow:hidden;border-radius:8px;}
+.about-path-image img {aspect-ratio:.8;object-fit:cover;}
+.about-path h3 {font:500 29px/1.1 var(--serif);color:var(--wine);margin:12px 0;}
+.about-path p {font-size:12px;line-height:1.8;color:#66565c;}
+.about-link {display:block;font-size:12px;font-weight:600;color:var(--wine);margin-top:20px;}
+.about-values {display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding:40px 0 64px;border-bottom:1px solid var(--line);}
+.about-value-number {font:italic 30px var(--serif);color:var(--terra);}
+.about-values h3 {font:500 27px var(--serif);color:var(--wine);margin:12px 0;}
+.about-values p {font-size:13px;line-height:1.8;color:#66565c;max-width:300px;}
+.about-help {display:grid;grid-template-columns:.85fr 1.15fr;gap:90px;padding:72px 0;}
+.about-demo {display:inline-block;font-size:9px;letter-spacing:1px;border:1px solid var(--line);padding:7px 12px;border-radius:30px;margin-top:24px;color:#66565c;}
+.about-faq h3 {font:500 27px var(--serif);color:var(--wine);margin:0 0 16px;}
+.about-faq details {border-bottom:1px solid var(--line);scroll-margin-top:30px;}
+.about-faq summary {cursor:pointer;padding:20px 28px 20px 0;position:relative;list-style:none;font-weight:500;color:var(--wine);}
+.about-faq summary::-webkit-details-marker {display:none;}
+.about-faq summary::after {content:'+';position:absolute;right:4px;font-size:20px;top:15px;}
+.about-faq details[open] summary::after {content:'−';}
+.about-faq p {padding:0 24px 20px 0;color:#66565c;font-size:13px;line-height:1.85;}
+.about-closing {text-align:center;background:var(--wine);color:var(--cream);padding:54px 20px;border-radius:12px;}
+.about-closing .eyebrow {color:#e0b9aa;}
+.about-closing h2 {color:var(--cream);margin:18px 0 28px;}
+.about-closing .btn {background:var(--cream);color:var(--wine);}
+@media(max-width:1000px) {
+ .about-hero {gap:36px;}.about-manifesto {gap:36px;}.about-path {grid-template-columns:1fr;padding:18px;}.about-path-image img {width:100%;aspect-ratio:1.4;object-fit:contain;}.about-help {gap:40px;}.about-record {left:0;}.about-art-note {font-size:8px;}
+}
+@media(max-width:650px) {
+ .about-vanta {padding-bottom:40px;}.about-hero {grid-template-columns:1fr;padding-top:12px;padding-bottom:28px;gap:36px;}.about-intro h1 {font-size:54px;}.about-intro>p {font-size:14px;}.about-intro .btn {font-size:12px;}.about-art {padding:0 0 65px 28px;max-width:440px;width:100%;margin:auto;}.about-photo {aspect-ratio:1.1;border-radius:120px 120px 8px 8px;}.about-ribbon {gap:9px;font-size:16px;text-align:center;}.about-ribbon b {font-size:16px;}.about-manifesto {grid-template-columns:1fr;gap:8px;padding-top:44px;}.about-paths {grid-template-columns:1fr;padding-bottom:20px;}.about-path {grid-template-columns:.8fr 1fr;gap:18px;}.about-path-image img {aspect-ratio:.85;object-fit:cover;}.about-path h3 {font-size:26px;}.about-values {grid-template-columns:1fr;gap:24px;padding:28px 0 40px;}.about-values article {padding-left:46px;position:relative;}.about-value-number {position:absolute;left:0;top:7px;}.about-values h3 {font-size:25px;}.about-help {grid-template-columns:1fr;gap:34px;padding:44px 0;}.about-closing {padding:38px 20px;}.about-closing h2 {font-size:38px;}
+}
+@media(prefers-reduced-motion:reduce) {.about-path:hover {transform:none;}}
